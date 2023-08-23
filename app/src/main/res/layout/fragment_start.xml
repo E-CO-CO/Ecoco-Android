@@ -22,7 +22,7 @@
 
     <TextView
         android:id="@+id/tv_ecoco_name"
-        style="@style/ankh_sanctuary"
+        style="@style/ankh_sanctuary_font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/title_splash"
