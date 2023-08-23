@@ -34,7 +34,7 @@ class StartFragment : BaseFragment<FragmentStartBinding>(FragmentStartBinding::i
         val withEcoWithSpannable = SpannableStringBuilder(binding.tvEcocoSlogan.text)
         val withEcoWithColor = ForegroundColorSpan(
             ContextCompat.getColor(
-                mContext, R.color.tv_ecoco_slogan_with_color
+                mContext, R.color.gorse
             )
         )
         withEcoWithSpannable.setSpan(withEcoWithColor, 4, 6, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
@@ -44,7 +44,7 @@ class StartFragment : BaseFragment<FragmentStartBinding>(FragmentStartBinding::i
         val ecocoNameCoSpannable = SpannableStringBuilder(binding.tvEcocoName.text)
         val ecocoNameCoColor = ForegroundColorSpan(
             ContextCompat.getColor(
-                mContext, R.color.tv_ecoco_name_co_color
+                mContext, R.color.portage
             )
         )
         ecocoNameCoSpannable.setSpan(ecocoNameCoColor, 3, 5, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
