@@ -34,8 +34,7 @@ class StartFragment : BaseFragment<FragmentStartBinding>(FragmentStartBinding::i
         val withEcoWithSpannable = SpannableStringBuilder(binding.tvEcocoSlogan.text)
         val withEcoWithColor = ForegroundColorSpan(
             ContextCompat.getColor(
-                mContext,
-                R.color.tv_ecoco_slogan_with_color
+                mContext, R.color.tv_ecoco_slogan_with_color
             )
         )
         withEcoWithSpannable.setSpan(withEcoWithColor, 4, 6, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
@@ -45,14 +44,11 @@ class StartFragment : BaseFragment<FragmentStartBinding>(FragmentStartBinding::i
         val ecocoNameCoSpannable = SpannableStringBuilder(binding.tvEcocoName.text)
         val ecocoNameCoColor = ForegroundColorSpan(
             ContextCompat.getColor(
-                mContext,
-                R.color.tv_ecoco_name_co_color
+                mContext, R.color.tv_ecoco_name_co_color
             )
         )
         ecocoNameCoSpannable.setSpan(ecocoNameCoColor, 3, 5, Spannable.SPAN_INCLUSIVE_EXCLUSIVE)
         binding.tvEcocoName.text = ecocoNameCoSpannable
-
-
     } // End of initUI
 
     private fun initEventListeners() {
@@ -60,6 +56,5 @@ class StartFragment : BaseFragment<FragmentStartBinding>(FragmentStartBinding::i
             Navigation.findNavController(binding.btnKakaoLogin)
                 .navigate(R.id.action_startFragment_to_userInformInputFragment)
         }
-
     } // End of initEventListeners
 } // End of StartFragment class

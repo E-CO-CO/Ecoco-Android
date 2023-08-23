@@ -13,5 +13,4 @@ class NextGreenButtonCustomView(
 ) {
 
 
-
 } // End of NextGreenButtonCustomView class

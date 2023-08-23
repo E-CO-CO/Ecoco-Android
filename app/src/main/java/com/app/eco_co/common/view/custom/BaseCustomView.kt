@@ -25,6 +25,4 @@ abstract class BaseCustomView<VB : ViewBinding> @JvmOverloads constructor(
         val view = inflate.invoke(inflater, this as ViewGroup, false)
         addView(view.root)
     } // End of init()
-
-
 } // End of BaseCustomView
