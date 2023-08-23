@@ -8,5 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- StartLayout -->
     <color name="btn_kakao_login_color">#FF5ABD</color>
+    <color name="bg_start_color">#151515</color>
+    <color name="tv_ecoco_name_eco_color">#00FF47</color>
+    <color name="tv_ecoco_name_co_color">#94A8E0</color>
+    <color name="tv_ecoco_slogan_with_color">#F5F03C</color>
 </resources>

@@ -29,4 +29,4 @@ abstract class BaseFragment<VB : ViewBinding>(
         super.onDestroyView()
         _binding = null
     } // End of onDestroyView
-}
+} // End of BaseFragment class

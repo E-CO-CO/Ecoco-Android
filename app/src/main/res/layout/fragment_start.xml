@@ -7,15 +7,43 @@
         android:background="@drawable/bg_start"
         tools:context=".common.view.start.StartFragment">
 
+    <TextView
+            android:textSize="34sp"
+            android:fontFamily="@font/gmarket_sans_light"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/tv_ecoco_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/tv_ecoco_slogan"
+            android:id="@+id/tv_ecoco_slogan"
+            android:layout_marginBottom="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <TextView
+            android:textColor="@color/tv_ecoco_name_eco_color"
+            android:textSize="94sp"
+            android:fontFamily="@font/ankh_sanctuary"
+            android:text="@string/tv_ecoco_name_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_ecoco_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
 
     <com.google.android.material.button.MaterialButton
             android:paddingEnd="40dp"
-            app:iconPadding="-20dp"
+            app:iconPadding="10dp"
+            android:paddingStart="24dp"
             app:iconTint="@color/black"
+            android:textColor="@color/white"
             android:padding="18dp"
             android:width="380dp"
             app:cornerRadius="6dp"
-            android:fontFamily="@font/gmarket_sans"
+            android:fontFamily="@font/gmarket_sans_medium"
             android:layout_marginBottom="40dp"
             app:icon="@drawable/ic_kakao_svg"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +53,19 @@
             android:text="@string/btn_kakao_login_text"
             android:id="@+id/btn_kakao_login"
             android:layout_width="wrap_content"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:layout_height="wrap_content" />
+
+
+    <ImageView
+            android:scaleType="matrix"
+            android:translationX="180dp"
+            android:translationY="230dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/ic_egoo_character"
+            android:id="@+id/iv_ecoco_character"
+            android:layout_width="752dp"
+            android:layout_height="585dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
