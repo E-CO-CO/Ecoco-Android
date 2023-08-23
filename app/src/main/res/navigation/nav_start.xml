@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_start"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.app.eco_co.common.view.start.StartFragment"
+        android:label="startFragmentDirection">
+
+        <action
+            android:id="@+id/action_startFragment_to_userInformInputFragment"
+            app:destination="@id/userInformInputFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userInformInputFragment"
+        android:name="com.app.eco_co.common.view.start.UserInformInputFragment"
+        android:label="userInformInputDirection">
+    </fragment>
+
+</navigation>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_splash"
+    tools:context=".common.view.start.StartFragment">
+
+    <TextView
+        android:id="@+id/tv_ecoco_slogan"
+        style="@style/gmarket_font_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/content_splash_slogan"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_ecoco_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_ecoco_name"
+        style="@style/ankh_sanctuary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_splash"
+        android:textColor="@color/malachite"
+        android:textSize="94sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_kakao_login"
+        style="@style/gmarket_font_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:width="380dp"
+        android:padding="18dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="40dp"
+        android:text="@string/content_kakao_start"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:backgroundTint="@color/hot_pink"
+        app:cornerRadius="6dp"
+        app:icon="@drawable/bg_kakao_login_btn"
+        app:iconPadding="10dp"
+        app:iconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_ecoco_character"
+        android:layout_width="752dp"
+        android:layout_height="585dp"
+        android:background="@drawable/ic_egoo_character"
+        android:scaleType="matrix"
+        android:translationX="180dp"
+        android:translationY="230dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
