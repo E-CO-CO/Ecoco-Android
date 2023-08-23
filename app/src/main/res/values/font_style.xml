@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="base_font_light" parent="@android:style/Widget.DeviceDefault.TextView">
+    <style name="gmarket_font_light" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="android:fontFamily">@font/gmarket_sans_light</item>
     </style>
 
-    <style name="base_font_medium" parent="@android:style/Widget.DeviceDefault.TextView">
+    <style name="gmarket_font_medium" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="android:fontFamily">@font/gmarket_sans_medium</item>
     </style>
 
-    <style name="base_font_bold" parent="@android:style/Widget.DeviceDefault.TextView">
+    <style name="gmarket_font_bold" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="android:fontFamily">@font/gmarket_sans_bold</item>
     </style>
 
