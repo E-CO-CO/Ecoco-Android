@@ -21,51 +21,94 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:lineSpacingExtra="10dp"
         android:text="@string/content_inform_input_notice"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@id/iv_arrow"
         app:layout_constraintTop_toBottomOf="@id/iv_arrow" />
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cv_user_image"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_user_inform_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        app:cardBackgroundColor="@color/hint_of_green"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_user_inform_input_notice">
 
-        <ImageView
-            android:id="@+id/iv_user_image"
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_user_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:contentDescription="유저 이미지가 보이는 ImageView"
-            android:scaleType="centerCrop"
-            android:src="@drawable/ic_egoo_character" />
+            app:cardBackgroundColor="@color/hint_of_green"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp">
 
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            app:cornerRadius="100dp"
-            app:icon="@drawable/ic_plus"
-            app:iconTint="@color/white" />
+            <ImageView
+                android:id="@+id/iv_user_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_user_image_default"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
 
-    </androidx.cardview.widget.CardView>
+        <FrameLayout
+            android:id="@+id/fl_user_image_input"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_oval_han_purple"
+            app:layout_constraintBottom_toBottomOf="@id/cv_user_image_view"
+            app:layout_constraintEnd_toEndOf="@id/cv_user_image_view"
+            app:layout_constraintStart_toEndOf="@id/cv_user_image_view"
+            app:layout_constraintTop_toBottomOf="@id/cv_user_image_view">
+
+            <ImageView
+                android:id="@+id/iv_user_image_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/ic_plus"
+                app:icon="@drawable/ic_plus"
+                app:iconTint="@color/white" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        
-        android:layout_width="wrap_content"
+        android:layout_width="380dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_rect_white_smoke_radius14"
+        android:maxWidth="380dp"
+        android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cv_user_image">
+        app:layout_constraintTop_toBottomOf="@id/ctl_user_inform_input">
 
+        <TextView
+            android:id="@+id/tv_nickname_title"
+            style="@style/s_c_dream5_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_nickname_input"
+            android:textColor="@color/silver"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_nickname_input"
+            style="@style/s_c_dream5_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@null"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/tv_nickname_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_nickname_title"
+            tools:text="에코코" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

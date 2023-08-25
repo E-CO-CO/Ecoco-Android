@@ -18,5 +18,8 @@
     <!-- 정보입력 창-->
     <color name="bright_green">#69DB10</color>
     <color name="hint_of_green">#E0FFC8</color>
+    <color name="white_smoke">#F7F7F7</color>
+    <color name="silver">#C1C1C1</color>
+    <color name="han_purple">#2929FF</color>
 
 </resources>
