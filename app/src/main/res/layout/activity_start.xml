@@ -19,5 +19,4 @@
         app:navGraph="@navigation/nav_start"
         tools:layout="@layout/fragment_start" />
 
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

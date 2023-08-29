@@ -15,14 +15,15 @@ private const val TAG = "BaseCustomView_창영"
 abstract class BaseCustomView<VB : ViewBinding> @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet?,
-    inflate: Inflate<VB>
+    inflate: Inflate<VB>,
 ) : ConstraintLayout(context, attrs) {
+    protected val binding: VB
 
     init {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as? LayoutInflater
             ?: throw IllegalStateException("LayoutInflater not found.")
 
-        val view = inflate.invoke(inflater, this as ViewGroup, false)
-        addView(view.root)
+        binding = inflate.invoke(inflater, this as ViewGroup, false)
+        addView(binding.root)
     } // End of init()
 } // End of BaseCustomView
