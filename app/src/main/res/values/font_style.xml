@@ -20,4 +20,8 @@
     <style name="s_c_dream5_font" parent="@android:style/Widget.DeviceDefault.TextView">
         <item name="android:fontFamily">@font/s_c_dream5</item>
     </style>
+
+    <style name="s_c_dream7_font" parent="@android:style/Widget.DeviceDefault.TextView">
+        <item name="android:fontFamily">@font/s_c_dream7</item>
+    </style>
 </resources>

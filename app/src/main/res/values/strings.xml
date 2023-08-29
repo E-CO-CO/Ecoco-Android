@@ -10,4 +10,8 @@
     <string name="content_start">시작하기</string>
     <string name="content_inform_input_notice">나를 가장 잘 나타낼 수 있는\n닉네임과 사진을 설정해주세요!</string>
     <string name="title_nickname_input">닉네임</string>
+
+
+    <!-- Article 화면 -->
+    <string name="title_article">Article</string>
 </resources>
