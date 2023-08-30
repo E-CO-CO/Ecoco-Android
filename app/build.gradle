@@ -75,5 +75,8 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.45"
     implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0'
 
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
 
 }

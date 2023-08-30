@@ -22,4 +22,10 @@
     <color name="silver">#C1C1C1</color>
     <color name="han_purple">#2929FF</color>
 
+
+    <color name="kelly_green">#5ED400</color>
+    <color name="blue_charcoal">#242C32</color>
+    <color name="spring_green">#00DF80</color>
+    <color name="arsenic">#364149</color>
+    <color name="grey">#797979</color>
 </resources>
