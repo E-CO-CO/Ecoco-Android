@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_home_ecoco_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_home_ecoco_logo_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ankh_sanctuary"
+            android:text="@string/content_home_ecoco_logo_1"
+            android:textColor="@color/bright_green"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ankh_sanctuary"
+            android:text="@string/content_home_ecoco_logo_2"
+            android:textColor="@color/portage"
+            android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@id/tv_home_ecoco_logo_1"
+            app:layout_constraintTop_toTopOf="@id/tv_home_ecoco_logo_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:text="@string/content_home_ecoco_logo_3"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/cl_home_ecoco_logo"
+        app:layout_constraintStart_toEndOf="@id/cl_home_ecoco_logo"
+        app:layout_constraintTop_toTopOf="@id/cl_home_ecoco_logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_days_of_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/cl_home_ecoco_logo"
+        app:layout_constraintTop_toBottomOf="@id/cl_home_ecoco_logo">
+
+        <TextView
+            android:id="@+id/tv_days_of_use_hundreds"
+            style="@style/home_days_of_use"
+            android:layout_marginEnd="5dp"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tv_days_of_use_tens"
+            style="@style/home_days_of_use"
+            android:layout_marginEnd="5dp"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/tv_days_of_use_units"
+            style="@style/home_days_of_use"
+            tools:text="3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:text="@string/content_home_days_of_use"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/ll_days_of_use"
+        app:layout_constraintStart_toEndOf="@id/ll_days_of_use"
+        app:layout_constraintTop_toTopOf="@id/ll_days_of_use" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/bg_rect_trans60_white_radius30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_days_of_use">
+
+        <ImageView
+            android:id="@+id/iv_home_challenge_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/image_home_challenge_title"
+            android:src="@drawable/ic_home_challenge_title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:text="@string/title_home_today_challenge"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_home_challenge_title"
+            app:layout_constraintStart_toEndOf="@id/iv_home_challenge_title"
+            app:layout_constraintTop_toTopOf="@id/iv_home_challenge_title" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginVertical="30dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_home_challenge_title"
+            tools:listitem="@layout/item_home_challenge" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/image_home_egoo"
+        android:src="@drawable/ic_home_egoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

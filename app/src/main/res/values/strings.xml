@@ -10,4 +10,14 @@
     <string name="content_start">시작하기</string>
     <string name="content_inform_input_notice">나를 가장 잘 나타낼 수 있는\n닉네임과 사진을 설정해주세요!</string>
     <string name="title_nickname_input">닉네임</string>
+
+    <!-- 홈 화면 -->
+    <string name="image_home_challenge_title">image_home_challenge_title</string>
+    <string name="image_home_challenge_item">image_home_challenge_item</string>
+    <string name="image_home_egoo">image_home_egoo</string>
+    <string name="content_home_ecoco_logo_1">ECO</string>
+    <string name="content_home_ecoco_logo_2">CO</string>
+    <string name="content_home_ecoco_logo_3">와 함께한지</string>
+    <string name="content_home_days_of_use">일째</string>
+    <string name="title_home_today_challenge">오늘의 챌린지</string>
 </resources>
