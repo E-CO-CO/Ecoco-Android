@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.app.eco_co.R
 import com.app.eco_co.common.util.BaseFragment
-import com.app.eco_co.common.view.custom.showCustomToast
+import com.app.eco_co.common.view.custom.CustomToast.showCustomToast
 import com.app.eco_co.databinding.FragmentArticleHomeBinding
 import com.app.eco_co.domain.entity.Article
 import java.time.LocalDate
@@ -30,7 +30,7 @@ class ArticleHomeFragment :
         super.onViewCreated(view, savedInstanceState)
 
         initAdapter()
-    }
+    } // End of onViewCreated()
 
     private fun initAdapter() {
         articlesAdapter = ArticlesAdapter(mContext, articleTestList)
@@ -42,13 +42,13 @@ class ArticleHomeFragment :
 
         articlesAdapter.setItemClickListener(object : ArticlesAdapter.ItemClickListener {
             override fun onArticleClick(position: Int) {
-                mContext.showCustomToast("${position + 1} 번째 아티클을 북마크 했어요!")
+                mContext.showCustomToast("${position + 1} 번째 아티클 클릭!")
 
                 Navigation.findNavController(binding.rvArticles.findViewById(R.id.cl_article_detail))
                     .navigate(R.id.action_articleHomeFragment_to_articleDetailFragment)
             }
         })
-    } // End of initAdapter
+    } // End of initAdapter()
 
     companion object {
         var articleTestList = arrayListOf(

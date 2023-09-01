@@ -49,6 +49,17 @@
 
 
             <ImageView
+                android:id="@+id/iv_article_detail_bookmark"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="40dp"
+                android:background="@drawable/ic_bookmark_done"
+                app:layout_constraintBottom_toTopOf="@id/iv_article_detail_thumbnail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
                 android:id="@+id/iv_article_detail_thumbnail"
                 android:layout_width="match_parent"
                 android:layout_height="280dp"

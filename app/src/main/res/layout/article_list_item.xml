@@ -47,9 +47,9 @@
 
                 <TextView
                     android:id="@+id/tv_article_tag"
-                    style="@style/s_c_dream7_font"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/s_c_dream7"
                     android:textColor="@color/white"
                     android:textSize="16sp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -61,10 +61,10 @@
 
             <TextView
                 android:id="@+id/tv_article_main_title"
-                style="@style/s_c_dream7_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
+                android:fontFamily="@font/s_c_dream7"
                 android:textColor="@color/white"
                 android:textSize="26sp"
                 app:layout_constraintStart_toStartOf="@id/cl_article_tag"
@@ -73,10 +73,10 @@
 
             <TextView
                 android:id="@+id/tv_article_sub_title"
-                style="@style/s_c_dream7_font"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="14dp"
+                android:fontFamily="@font/s_c_dream7"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@id/cl_article_tag"

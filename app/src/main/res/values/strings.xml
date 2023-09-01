@@ -15,4 +15,6 @@
     <!-- Article 화면 -->
     <string name="title_article">Article</string>
     <string name="title_editor">Editor</string>
+    <string name="content_article_bookmark_add">아티클을 북마크 했어요!</string>
+    <string name="content_article_bookmark_remove">아티클을 북마크 취소했어요!</string>
 </resources>
