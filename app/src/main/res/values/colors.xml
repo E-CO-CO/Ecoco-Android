@@ -14,4 +14,6 @@
     <color name="portage">#94A8E0</color>
     <color name="han_purple">#2929FF</color>
     <color name="hot_pink">#FF5ABD</color>
+    <color name="very_light_grey">#C8C8C8</color>
+    <color name="dark_gray">#AEAEAE</color>
 </resources>

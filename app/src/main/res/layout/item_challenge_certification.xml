@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/iv_participant_profile"
+            circleImgUri="@{}"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/image_challenge_participant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/iv_participant_profile"
+            app:layout_constraintStart_toEndOf="@id/iv_participant_profile"
+            app:layout_constraintTop_toTopOf="@id/iv_participant_profile">
+
+            <TextView
+                android:id="@+id/tv_participant_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/s_c_dream5"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="에코코" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/s_c_dream3"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/tv_participant_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_participant_name"
+                tools:text="40분 전" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_edit_challenge_certification"
+            android:src="@drawable/ic_edit_challenge_certification"
+            app:layout_constraintBottom_toBottomOf="@id/iv_participant_profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_participant_profile" />
+
+        <ImageView
+            android:id="@+id/iv_certification"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_rect_transparent_radius20"
+            android:clipToOutline="true"
+            android:contentDescription="@string/image_certification"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@id/iv_participant_profile"
+            tools:src="@drawable/bg_main_home"
+            tools:targetApi="s" />
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/s_c_dream4"
+            android:text="@string/content_certification_like_1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_certification" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/s_c_dream5"
+            android:textColor="@color/hot_pink"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_like"
+            app:layout_constraintStart_toEndOf="@id/tv_like"
+            app:layout_constraintTop_toTopOf="@id/tv_like"
+            tools:text="36" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/s_c_dream4"
+            android:text="@string/content_certification_like_2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_like_count"
+            app:layout_constraintStart_toEndOf="@id/tv_like_count"
+            app:layout_constraintTop_toTopOf="@id/tv_like_count" />
+
+        <ImageView
+            android:id="@+id/iv_certification_dislike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/image_certification_dislike"
+            android:src="@drawable/ic_challenge_certification_dislike"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_certification" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/image_certification_like"
+            android:src="@drawable/ic_challenge_certification_like"
+            app:layout_constraintEnd_toStartOf="@id/iv_certification_dislike"
+            app:layout_constraintTop_toTopOf="@id/iv_certification_dislike" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
