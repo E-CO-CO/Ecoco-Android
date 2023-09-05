@@ -1,6 +1,7 @@
 package com.app.eco_co.common.view.custom
 
 import android.content.Context
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -29,7 +30,8 @@ object CustomToast {
 
         // Create and show the Toast
         val toast = Toast(this)
-        //toast.setGravity(Gravity.BOTTOM or Gravity.FILL_HORIZONTAL, 0, 30)
+        toast.setGravity(Gravity.BOTTOM or Gravity.FILL_HORIZONTAL, 0, 30)
+        toast.setMargin(0.5f, 0.0f)
 
         toast.duration = Toast.LENGTH_SHORT
         toast.view = binding.root // Attach the custom layout to the Toast

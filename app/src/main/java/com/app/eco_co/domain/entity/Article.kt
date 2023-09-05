@@ -5,15 +5,15 @@ import kotlinx.parcelize.Parcelize
 import java.time.LocalDate
 
 @Parcelize
-data class Article @JvmOverloads constructor(
-    var articleId: Int,
-    var tag: String = "",
-    var mainTitle: String = "",
-    var subTitle: String = "",
-    var userImage: String? = null,
-    var thumbnail: String? = null,
-    var editorName: String = "",
-    var day: LocalDate,
-    var content: String = "",
-    var images: List<String> = emptyList()
+data class Article constructor(
+    val articleId: Int,
+    val tag: String = "",
+    val mainTitle: String = "",
+    val subTitle: String = "",
+    val userImage: String? = null,
+    val thumbnail: String? = null,
+    val editorName: String = "",
+    val day: LocalDate,
+    val content: String = "",
+    val images: List<String> = emptyList()
 ) : Parcelable

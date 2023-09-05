@@ -33,22 +33,22 @@ class ArticleHomeFragment :
     } // End of onViewCreated()
 
     private fun initAdapter() {
-        articlesAdapter = ArticlesAdapter(mContext, articleTestList)
+        articlesAdapter = ArticlesAdapter(mContext, articleTestList) { id, message ->
+            articleClick(id, message)
+        }
 
         binding.rvArticles.apply {
             adapter = articlesAdapter
             layoutManager = LinearLayoutManager(mContext, GridLayoutManager.VERTICAL, false)
         }
-
-        articlesAdapter.setItemClickListener(object : ArticlesAdapter.ItemClickListener {
-            override fun onArticleClick(position: Int) {
-                mContext.showCustomToast("${position + 1} 번째 아티클 클릭!")
-
-                Navigation.findNavController(binding.rvArticles.findViewById(R.id.cl_article_detail))
-                    .navigate(R.id.action_articleHomeFragment_to_articleDetailFragment)
-            }
-        })
     } // End of initAdapter()
+
+    private fun articleClick(position: Int, message: String) {
+        mContext.showCustomToast("${position + 1} 번째 아티클 클릭!")
+
+        Navigation.findNavController(binding.rvArticles.findViewById(R.id.cl_article_detail))
+            .navigate(R.id.action_articleHomeFragment_to_articleDetailFragment)
+    } // End of articleClick
 
     companion object {
         var articleTestList = arrayListOf(
