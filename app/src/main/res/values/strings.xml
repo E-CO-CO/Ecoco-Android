@@ -33,4 +33,11 @@
     <string name="image_certification">image_certification</string>
     <string name="image_certification_dislike">image_certification_dislike</string>
     <string name="image_certification_like">image_certification_like</string>
+
+    <!-- 챌린지 참여 다이얼로그 -->
+    <string name="content_dialog_join_challenge">챌린지에 참여할까요?</string>
+    <string name="content_dialog_join_challenge_sub">참여 시 중간에 그만둘 수 없어요!</string>
+    <string name="content_close_dialog">닫기</string>
+    <string name="content_join_challenge">참여하기</string>
+    <string name="image_question_dialog_egoo">image_question_dialog_egoo</string>
 </resources>
