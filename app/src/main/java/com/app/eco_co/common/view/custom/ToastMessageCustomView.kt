@@ -11,7 +11,7 @@ import com.app.eco_co.databinding.CustomToastBinding
 private const val TAG = "ToastMessageCustomView_창영"
 
 object CustomToast {
-    lateinit var binding: CustomToastBinding
+    private lateinit var binding: CustomToastBinding
 
     fun Context.showCustomToast(message: String) {
         // Inflate the custom toast layout

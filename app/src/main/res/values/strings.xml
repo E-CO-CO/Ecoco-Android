@@ -17,6 +17,9 @@
     <string name="title_editor">Editor</string>
     <string name="content_article_bookmark_add">아티클을 북마크 했어요!</string>
     <string name="content_article_bookmark_remove">아티클을 북마크 취소했어요!</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_calendar">챌린지 기록</string>
+    <string name="content_calenar_validate">인증하기</string>
+    <string name="content_item_validate_tag">인증완료</string>
+
 </resources>

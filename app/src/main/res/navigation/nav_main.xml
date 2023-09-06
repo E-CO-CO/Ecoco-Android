@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_main"
-    app:startDestination="@id/articleHomeFragment">
+    app:startDestination="@id/calendarFragment">
 
     <fragment
         android:id="@+id/articleHomeFragment"
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/calendarFragment"
-        android:name="com.app.eco_co.CalendarFragment"
+        android:name="com.app.eco_co.common.view.main.CalendarFragment"
         android:label="calendarFragmentDirection">
 
     </fragment>

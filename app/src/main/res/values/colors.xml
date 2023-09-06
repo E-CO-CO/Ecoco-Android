@@ -28,4 +28,9 @@
     <color name="spring_green">#00DF80</color>
     <color name="arsenic">#364149</color>
     <color name="grey">#797979</color>
+    <color name="tea_green">#D0F4B4</color>
+    <color name="gainsboro">#DBDBDB</color>
+    <color name="dim_gray">#696969</color>
+
+
 </resources>

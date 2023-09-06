@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cl_item_validate"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/bg_rect_tea_green_radius6">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_item_validate"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_margin="26dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_item_validate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_article_test3" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_item_validate_tag"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/bg_rect_bright_green_radius24"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintStart_toEndOf="@id/cv_item_validate"
+        app:layout_constraintTop_toTopOf="@id/cv_item_validate">
+
+        <TextView
+            android:id="@+id/tv_item_validate_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmarket_sans_bold"
+            android:padding="0dp"
+            android:text="@string/content_item_validate_tag"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_item_validate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gmarket_sans_medium"
+        android:padding="0dp"
+        android:text="분리수거하기"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@id/cl_item_validate_tag"
+        app:layout_constraintTop_toBottomOf="@id/cl_item_validate_tag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
