@@ -21,4 +21,11 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.app.eco_co.CalendarFragment"
+        android:label="calendarFragmentDirection">
+
+    </fragment>
+
 </navigation>
