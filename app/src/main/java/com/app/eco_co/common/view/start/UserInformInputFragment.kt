@@ -24,6 +24,15 @@ class UserInformInputFragment :
         nextGreenButton = binding.btnUserInformInputNext
         nextGreenButton.setView(1)
 
+        initEventListeners()
 
     } // End of onViewCreated
+
+    private fun initEventListeners() {
+        nextGreenButton.setOnClickListener {
+            val activity = mContext as StartActivity
+            activity.changeActivity()
+        }
+
+    } // End of initEventListeners()
 } // End of UserInformInputFragment class

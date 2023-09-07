@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="nero">#151515</color>
-    <color name="silver">#C1C1C1</color>
     <color name="trans60_white">#99FFFFFF</color>
     <color name="trans70_white">#B3FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
@@ -11,10 +8,18 @@
     <color name="hint_of_green">#E0FFC8</color>
     <color name="bright_green">#69DB10</color>
     <color name="malachite">#00FF47</color>
+    <color name="kelly_green">#5ED400</color>
+    <color name="spring_green">#00DF80</color>
     <color name="portage">#94A8E0</color>
     <color name="light_slate_blue">#8F8FFF</color>
     <color name="han_purple">#2929FF</color>
     <color name="hot_pink">#FF5ABD</color>
     <color name="very_light_grey">#C8C8C8</color>
+    <color name="silver">#C1C1C1</color>
     <color name="dark_gray">#AEAEAE</color>
+    <color name="grey">#797979</color>
+    <color name="arsenic">#364149</color>
+    <color name="blue_charcoal">#242C32</color>
+    <color name="nero">#151515</color>
+    <color name="black">#FF000000</color>
 </resources>

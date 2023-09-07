@@ -9,10 +9,10 @@
 
     <TextView
         android:id="@+id/tv_ecoco_slogan"
-        style="@style/gmarket_font_light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
+        android:fontFamily="@font/gmarket_sans_light"
         android:text="@string/content_splash_slogan"
         android:textColor="@color/white"
         android:textSize="34sp"
@@ -22,9 +22,9 @@
 
     <TextView
         android:id="@+id/tv_ecoco_name"
-        style="@style/ankh_sanctuary_font"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/ankh_sanctuary"
         android:text="@string/title_splash"
         android:textColor="@color/malachite"
         android:textSize="94sp"
@@ -36,11 +36,11 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_kakao_login"
-        style="@style/gmarket_font_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:width="380dp"
+        android:fontFamily="@font/gmarket_sans_medium"
         android:padding="18dp"
         android:paddingStart="24dp"
         android:paddingEnd="40dp"

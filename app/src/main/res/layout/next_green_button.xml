@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="68dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
-    android:background="@drawable/bg_rect_bright_green_radius10">
+    android:layout_marginStart="22dp"
+    android:layout_marginEnd="22dp"
+    android:background="@drawable/bg_rect_bright_green_radius14">
 
     <TextView
         android:id="@+id/tv_start"
-        style="@style/gmarket_font_bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/gmarket_sans_bold"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

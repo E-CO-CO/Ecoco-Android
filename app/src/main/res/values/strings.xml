@@ -2,14 +2,14 @@
     <string name="app_name">ECO-CO</string>
 
     <!-- splash 화면 -->
-    <string name="title_splash">ECOCO</string>
     <string name="content_kakao_start">카카오톡으로 시작하기</string>
+    <string name="title_splash">ECOCO</string>
     <string name="content_splash_slogan">에코를 함께하다</string>
 
     <!-- 정보입력 화면 -->
-    <string name="title_nickname_input">닉네임</string>
     <string name="content_start">시작하기</string>
     <string name="content_inform_input_notice">나를 가장 잘 나타낼 수 있는\n닉네임과 사진을 설정해주세요!</string>
+    <string name="title_nickname_input">닉네임</string>
 
     <!-- 홈 화면 -->
     <string name="title_home_today_challenge">오늘의 챌린지</string>
@@ -40,4 +40,10 @@
     <string name="content_close_dialog">닫기</string>
     <string name="content_join_challenge">참여하기</string>
     <string name="image_question_dialog_egoo">image_question_dialog_egoo</string>
+
+    <!-- Article 화면 -->
+    <string name="title_article">Article</string>
+    <string name="title_editor">Editor</string>
+    <string name="content_article_bookmark_add">아티클을 북마크 했어요!</string>
+    <string name="content_article_bookmark_remove">아티클을 북마크 취소했어요!</string>
 </resources>
