@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_rect_bright_green_radius10"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gmarket_sans_medium"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="길거리 쓰레기 줍기" />
+
+        <TextView
+            android:id="@+id/tv_home_challenge_item_count"
+            style="@style/home_challenge_item_attr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="25" />
+
+        <ImageView
+            android:id="@+id/iv_home_challenge_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/image_home_challenge_item"
+            android:src="@drawable/ic_home_challenge_count"
+            app:layout_constraintBottom_toBottomOf="@id/tv_home_challenge_item_count"
+            app:layout_constraintEnd_toStartOf="@id/tv_home_challenge_item_count"
+            app:layout_constraintTop_toTopOf="@id/tv_home_challenge_item_count" />
+
+        <TextView
+            android:id="@+id/tv_home_challenge_item_point"
+            style="@style/home_challenge_item_attr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_home_challenge_item_count"
+            app:layout_constraintTop_toTopOf="@id/tv_home_challenge_item_count"
+            tools:text="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/image_home_challenge_item"
+            android:src="@drawable/ic_home_challenge_point"
+            app:layout_constraintBottom_toBottomOf="@id/tv_home_challenge_item_point"
+            app:layout_constraintEnd_toStartOf="@id/tv_home_challenge_item_point"
+            app:layout_constraintTop_toTopOf="@id/tv_home_challenge_item_point" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -11,6 +11,35 @@
     <string name="content_inform_input_notice">나를 가장 잘 나타낼 수 있는\n닉네임과 사진을 설정해주세요!</string>
     <string name="title_nickname_input">닉네임</string>
 
+    <!-- 홈 화면 -->
+    <string name="title_home_today_challenge">오늘의 챌린지</string>
+    <string name="content_home_ecoco_logo_1">ECO</string>
+    <string name="content_home_ecoco_logo_2">CO</string>
+    <string name="content_home_ecoco_logo_3">와 함께한지</string>
+    <string name="content_home_days_of_use">일째</string>
+    <string name="image_home_challenge_title">image_home_challenge_title</string>
+    <string name="image_home_challenge_item">image_home_challenge_item</string>
+    <string name="image_arrow_left">image_arrow_left</string>
+    <string name="image_home_egoo">image_home_egoo</string>
+
+    <!-- 미션 상세 화면 -->
+    <string name="title_challenge_detail">미션 상세보기</string>
+    <string name="title_challenge_participant_list">참여자 목록</string>
+    <string name="content_challenge_detail_join">참여하기</string>
+    <string name="content_certification_like_1">좋아요</string>
+    <string name="content_certification_like_2">개</string>
+    <string name="image_challenge_participant">image_challenge_participant</string>
+    <string name="image_edit_challenge_certification">image_edit_challenge_certification</string>
+    <string name="image_certification">image_certification</string>
+    <string name="image_certification_dislike">image_certification_dislike</string>
+    <string name="image_certification_like">image_certification_like</string>
+
+    <!-- 챌린지 참여 다이얼로그 -->
+    <string name="content_dialog_join_challenge">챌린지에 참여할까요?</string>
+    <string name="content_dialog_join_challenge_sub">참여 시 중간에 그만둘 수 없어요!</string>
+    <string name="content_close_dialog">닫기</string>
+    <string name="content_join_challenge">참여하기</string>
+    <string name="image_question_dialog_egoo">image_question_dialog_egoo</string>
 
     <!-- Article 화면 -->
     <string name="title_article">Article</string>
